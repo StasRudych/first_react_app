@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return(
@@ -15,6 +16,8 @@ const Sidebar = () => {
                                 href="#">jameslee@website.com</a></li>
                             <li><i className="fa fa-link" /><span className="sr-only">Website:</span><a
                                 href="#">http://www.website.com</a></li>
+                            <li><i className="fa fa-link" /><span className="sr-only">About me page:</span><NavLink to="/page">Go to page</NavLink></li>
+                            <li><i className="fa fa-link" /><span className="sr-only">Main page:</span><NavLink to="/main">Go to Main page</NavLink></li>
                         </ul>
                     </div>
                 </div>
