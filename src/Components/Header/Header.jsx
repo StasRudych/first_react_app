@@ -11,14 +11,14 @@ const Header = () => {
                     <h1 className="name">Stanislav Rudych</h1>
                     <h2 className="desc">Web App Developer</h2>
                     <ul className="social list-inline">
-                        <li><a href="#"><i className="fa fa-twitter" /></a></li>
-                        <li><a href="#"><i className="fa fa-google-plus" /></a></li>
-                        <li><a href="#"><i className="fa fa-linkedin" /></a></li>
-                        <li><a href="#"><i className="fa fa-github-alt" /></a></li>
-                        <li className="last-item"><a href="#"><i className="fa fa-hacker-news" /></a></li>
+                        <li><a href="http://google.com"><i className="fa fa-twitter" /></a></li>
+                        <li><a href="http://google.com"><i className="fa fa-google-plus" /></a></li>
+                        <li><a href="http://google.com"><i className="fa fa-linkedin" /></a></li>
+                        <li><a href="http://google.com"><i className="fa fa-github-alt" /></a></li>
+                        <li className="last-item"><a href="http://google.com"><i className="fa fa-hacker-news" /></a></li>
                     </ul>
                 </div>
-                <a className="btn btn-cta-primary pull-right" href="#" target="_blank"><i className="fa fa-paper-plane"/> Contact Me</a>
+                <a className="btn btn-cta-primary pull-right" href="http://google.com"><i className="fa fa-paper-plane"/>Contact Me</a>
             </div>
         </header>
     );
