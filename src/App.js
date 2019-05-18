@@ -1,26 +1,16 @@
 import React from 'react';
-import './App.css';
+import './assets/plugins/bootstrap/css/bootstrap.min.css';
+import './assets/plugins/font-awesome/css/font-awesome.css';
+import './assets/css/styles.css';
 import MyTestComponent from './TestExport';
-
+import Header from './Components/Header/Header';
 
 
 const App = () => {
   return (
-      <div className="App">
-        Hello world;<br/>
         <Header />
-        <MyTestComponent />
-      </div>
   );
 }
 
-
-const Header = () => {
-  return(
-    <div className="my_test_class">
-      Hello. i'm from another component;
-    </div>
-  );
-}
 
 export default App;
