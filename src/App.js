@@ -9,22 +9,21 @@ import Page from './Components/Page/Page';
 import {BrowserRouter, Route} from "react-router-dom";
 
 
-const App = () => {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div>
                 <Header/>
                 <div className="container sections-wrapper">
                     <div className="row">
-                        <Route path='/page' component={Page}/>
-                        <Route path='/main' component={Content}/>
-                        <Sidebar/>
+                        <Route exact path='/page' render={() => <Page/>}/>
+                        <Route exact path='/' render={() => <Content posts={props.posts}/>}/>
+                        <Sidebar skills={props.skills}/>
                     </div>
                 </div>
             </div>
         </BrowserRouter>
     );
 }
-
 
 export default App;

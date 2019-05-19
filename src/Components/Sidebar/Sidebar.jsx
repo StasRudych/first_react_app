@@ -1,7 +1,8 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import Skills from "./Skills/Skills";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return(
         <div className="secondary col-md-4 col-sm-12 col-xs-12">
             <aside className="info aside section">
@@ -17,7 +18,7 @@ const Sidebar = () => {
                             <li><i className="fa fa-link" /><span className="sr-only">Website:</span><a
                                 href="#">http://www.website.com</a></li>
                             <li><i className="fa fa-link" /><span className="sr-only">About me page:</span><NavLink to="/page">Go to page</NavLink></li>
-                            <li><i className="fa fa-link" /><span className="sr-only">Main page:</span><NavLink to="/main">Go to Main page</NavLink></li>
+                            <li><i className="fa fa-link" /><span className="sr-only">Main page:</span><NavLink to="/">Go to Main page</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -27,45 +28,11 @@ const Sidebar = () => {
                     <h2 className="heading">Skills</h2>
                     <div className="content">
                         <p className="intro">
-                            Intro about your skills goes here. Keep the list lean and only show your primary skillset.
-                            You can always provide a link to your Linkedin or Coderwall profile so people can get more
-                            info there.</p>
+                            Ниже перечень того, что умею.</p>
                         <div className="skillset">
-                            <div className="item">
-                                <h3 className="level-title">Python &amp; Django<span className="level-label"
-                                                                                     data-toggle="tooltip"
-                                                                                     data-placement="left"
-                                                                                     data-animation="true"
-                                                                                     title="You can use the tooltip to add more info...">Expert</span>
-                                </h3>
-                                <div className="level-bar">
-                                    <div className="level-bar-inner" data-level="96%">
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <h3 className="level-title">Javascript &amp; jQuery<span
-                                    className="level-label">Expert</span></h3>
-                                <div className="level-bar">
-                                    <div className="level-bar-inner" data-level="96%">
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <h3 className="level-title">HTML5, CSS3, SASS &amp; LESS<span
-                                    className="level-label">Expert</span></h3>
-                                <div className="level-bar">
-                                    <div className="level-bar-inner" data-level="96%">
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="item">
-                                <h3 className="level-title">Ruby on Rails<span className="level-label">Pro</span></h3>
-                                <div className="level-bar">
-                                    <div className="level-bar-inner" data-level="85%">
-                                    </div>
-                                </div>
-                            </div>
+
+                            <Skills skills={props.skills}/>
+
                             <p><a className="more-link" href="#"><i className="fa fa-external-link" /> More on
                                 Coderwall</a></p>
                         </div>
